@@ -3,9 +3,9 @@
 
  function query($query) {
     global $conn;
-    $result = mysqli_query($conn, $query); // code ini adalah lemari
-    $rows = []; // digunakan untuk menyimpan nilai yang akan di isi dari lemari
-    while($row = mysqli_fetch_assoc($result)) { //ambil looping data dari lemari simpan ke dalam row
+    $result = mysqli_query($conn, $query); // code ini adalah kotak
+    $rows = []; // digunakan untuk menyimpan nilai yang akan di isi dari kotak
+    while($row = mysqli_fetch_assoc($result)) { //ambil looping data dari kotak simpan ke dalam row
         $rows[] = $row;
     }
     return $rows;
