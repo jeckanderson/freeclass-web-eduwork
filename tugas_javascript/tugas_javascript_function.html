@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript | Tugas Function</title>
+</head>
+<body>
+    <span>Menampilkan Hasil Penambahan Dengan fungsi Biasa</span>
+    <a href="#" onclick="tambah(2,2)">Tampilkan Hasil</a><br>
+    <span>Menampilkan Hasil Pengurangan Dengan Fungsi Expressi</span>
+    <a href="#" onclick="kurang(5,3)">Tampilkan Hasil</a><br>
+    <span>Menampilkan Hasil Pembagian dengan fungsi => </span>
+    <a href="#" onclick="bagi(6,4)">Tampilkan Hasil</a><br>
+    <span>Menampilkan Hasil Pembagian dengan fungsi => </span>
+    <a href="#" onclick="coba()">Klik</a>
+</body>
+<script>
+    function tambah($nilai1, $nilai2){
+        alert($hasil = $nilai1 + $nilai1);
+    }
+    var kurang = function ($a,$b) {
+        alert($hasil = $a-$b);
+    }
+    var bagi = ($a,$b) => {
+        alert($hasil = $a/$b);
+    }
+    var coba = new Function('console.log("hello");');
+</script>
+</html>

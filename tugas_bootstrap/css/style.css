@@ -1,0 +1,248 @@
+/* Box sizing rules */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    padding: 0px 13%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    z-index: 7;
+}
+header img{
+    cursor: pointer;
+    width: 18%;
+}
+header a{
+    text-decoration: none;
+}
+header .navbar ul{
+    list-style: none;
+}
+header .navbar ul li{
+    position: relative;
+    float: left;
+    font-family: 'Quicksand', sans-serif;
+}
+header .navbar ul li a{
+    margin-top: 14px;
+    padding: 7px 26px;
+    color: #333;
+    display: block;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+}
+header .navbar ul li a:hover{
+    transition: all 100ms linear;
+    color: #4DB8FF;
+}
+
+header .navbar ul li ul{
+    position: absolute;
+    width: 160px;
+    background: #fff;
+    display: none;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    margin: 0;
+    padding: 8px 9px;
+}
+.navbar .register{
+    float: right;
+    margin-top: 15px;
+    color: white;
+    background: #4DB7FE;
+    padding: 8px 28px;
+    position: relative;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.navbar .drop-down-kelas li a{
+    padding: 5px;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul{
+    display: initial;
+}
+.burger div{
+    width: 20px;
+    height: 2px;
+    background-color: rgb(255, 250, 250);
+    margin: 5px;
+}
+#menu-bar{
+    display: none;
+}
+header label{
+    cursor: pointer;
+    display: none;
+}
+.container{
+    max-width: 1000px;
+    width: 92%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 5;
+}
+.box h3{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    color: #4DB7FE;
+    /* font-weight: bold; */
+    padding-bottom: 1px;
+    font-weight: 600;
+}
+.box p{
+    font-size: 16px;
+    color: #878c9f;
+    line-height: 24px;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+.box {
+    padding: 15px 20px 15px 100px;
+    overflow: hidden;
+    position: relative;
+  }
+  .box .time-line-icon {
+    position: absolute;
+    left: 10px;
+    top: 20px;
+    width: 70px;
+    height: 70px;
+  }
+  .time-line-icon {
+    position: relative;
+    margin-bottom: 30px;
+    background-image: url(../clouds.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .box .time-line-icon i {
+    font-size: 40px;
+  }
+  .fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    color: rgb(77, 183, 254);
+  }
+
+  footer{
+    background-color: #0392FF;
+    text-align: center;
+}
+.footer{
+    padding: 40px;
+}
+.footer h3{
+    margin-top: 25px;
+    padding: 20px;
+    font-size: 34px;
+    font-weight: 700;
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(255, 255, 255);
+}
+.footer p{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    color: #fff;
+    padding: 10px;
+    font-weight: 500;
+}
+.wa{
+    position: fixed;
+    bottom: 25px;
+    z-index: 77;
+    right: 10px;
+    background: #0ebe43;
+    padding: 8px 20px;
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 20px;
+    border-radius: 50px;
+}
+.wa a{
+    text-decoration: none;
+    position: relative;
+    font-family: 'Quicksand', sans-serif;
+    /* margin-left: 0; */
+    color: #fff;
+}
+
+
+@media (max-width: 991px) {
+    header{
+        padding: 20px 10%;
+    }
+    header img{
+        cursor: pointer;
+        width: 40%;
+    }
+    header label{
+        display: initial;
+        background-color: #4DB7FE;
+        padding: 5px;
+        border-radius: 3px;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        border-top: 1px solid rgba(0,0,0,.1);
+        display: none;
+    }
+    header .navbar ul li{
+        width: 80%;
+        background-color: rgb(238, 107, 107);
+        margin-left: 30px;
+    }
+    header .navbar ul li ul{
+        position: static;
+        width: 10%;
+        margin-left: 999px;
+    }
+    header .navbar ul li ul li{
+        /* background-color: #eee; */
+        padding-left: 20px;
+    }
+    .navbar .register{
+        display: none;
+    }
+    #menu-bar:checked ~ .navbar{
+        display: initial;
+    }
+    .wa{
+        width: 100%;
+        right: 0;
+        margin: 0;
+        border-radius: 0;
+        font-size: 15px;
+        bottom: -12px;
+        position: fixed;
+        z-index: 77;
+        padding: 15px 20px;
+        color: #fff;
+        background-color: #0ebe43;
+        text-align: center;
+    }
+    .wa a{
+        display: block;
+        margin-bottom: 9px;
+    }
+}

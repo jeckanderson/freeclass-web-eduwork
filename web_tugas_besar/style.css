@@ -1,0 +1,40 @@
+.jumbotron{
+    padding: 7rem 1rem;
+    background-color: rgb(126, 162, 190);
+}
+.card-owlcarousel {
+    /* width: 180px; */
+    height: 260px;
+    cursor: pointer;
+}
+.card-owlcarousel img{
+    height: 150%;
+}
+.card-body{
+    background: #fbfcfd;
+}
+.footer-top {
+    padding: 50px 0;
+    color: #666;
+    background: #202020;
+    /* background: #F8F9FA; */
+}
+.footer-top p {
+    font-size: 13px;
+}
+.footer-bottom{
+    padding: 18px 0px;
+    background: #121212;
+    /* background: #3ABFA7; */
+    color: #666;
+    text-align: center;
+    font-size: 14px;
+}
+.detail-thumbnail{
+    width: 80%;
+    height: 190%;
+}
+.detail-thumbnail img{
+    width: 70%;
+    height: 208%;
+}

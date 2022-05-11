@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Document Latihan JavaScript</title>
+    <style>
+        .pointer-disabled{
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>Click Button</p>
+        <button id="hide" class="btn btn-primary">Hide</button>
+        <button id="show" class="btn btn-primary">Show</button>
+        <button id="ganti" class="btn btn-primary">Ganti</button>
+
+        <!-- Table -->
+        <div class="row">
+            <div class="col-md-6 mt-5">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h3>Form</h3>
+                        <form action="#">
+                            <div class="form-group">
+                                <label for="username">Username</label>
+                                <input type="text" name="username" class="form-control" id="username">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" name="password" class="form-control" id="password">
+                            </div>
+                            <button type="submit" class="btn btn-sm btn-primary" id="btn_submit">Simpan</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript">
+        // Script For Loop
+        // for(let i = 10; i >= 1; i--) {
+        //     document.write("<p>Pengulangan ke "+ i +" </p>");
+        // }
+
+        // Script Button HIDE/SHOW
+        $(document).ready(function(){
+            $("#hide").click(function(){
+                $("p").hide();
+            });
+            $("#show").click(function(){
+                $("p").show();
+            });
+        });
+        // Script untuk menganti text
+        $(document).ready(function(){
+            $("#ganti").click(function(){
+                $("p").text("halo");
+            });
+        });
+        // Button Disabled
+        // Disable Button JavaScript
+        // document.getElementById("btn-submit").disabled = true;
+        $('#btn_submit').prop('disabled', true);
+        $('#btn_submit').addClass('pointer-disabled');
+        // Panggil inputan dari form berdasarkan name
+        var username = '';
+        var password = '';
+        $('input[name=username]').on('input', function () {
+            username = $(this).val();
+            enableButton();
+            // console.log(username);
+        });
+        $('input[name=password]').on('input', function () {
+            password = $(this).val();
+            enableButton();
+        });
+        function enableButton() {
+            if(username != '' && password != '') {
+                $('#btn_submit').prop('disabled', false);
+                // $('#btn_submit').removeClass('pointer-disabled');
+            } else {
+                $('#btn_submit').prop('disabled', true);
+                // $('#btn_submit').removeClass('pointer-disabled');
+            }
+        }
+
+    </script>
+</body>
+</html>

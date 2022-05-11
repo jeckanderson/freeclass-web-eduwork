@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript | Tugas Looping</title>
+</head>
+<body>
+    
+</body>
+<script>
+    document.write("Looping For");
+    for(let i = 1; i <= 5; i++) {
+        document.write("<p>Loping ke " +i+ "</p>")
+    }
+
+    // While
+    document.write("Looping While");
+    var i = 5;
+    while(i >= 1) {
+        document.write("<p>looping ke "+i+ "</p>");
+    i--
+    }
+
+    // Do While
+    document.write("Looping Do While");
+    var i = 1;
+    do {
+        document.write("<p>looping ke "+i+ "</p>");
+        i++;
+    } while(i <= 5);
+
+    // Foreach
+    document.write("Looping Foreach<br>");
+    var data = ["nama","nim","jurusan","alamat","jk"];
+    for(i = 0; i < data.length; i++) {
+        document.write(i+ " . "+ data[i] + "<br/><br>");
+    }
+
+    // Foreach
+    document.write("Looping Foreach Array<br>");
+    var data = ["jakarta", "surabaya","jogjakarta"];
+    data.forEach((data) => {
+        document.write("<p>" +data+ "</p>");
+    });
+
+    document.write("Looping Repeat<br>");
+    document.write("ulangani text ini <br>" .repeat(5) +"<br>");
+
+    document.write("Looping Nested<br>");
+    for(let i = 0; i < 3; i++){
+    for(let j = 0; j < 3; j++){
+            document.write("<p>Perulangan ke " + i + "," + j + "</p>");
+        }
+    }
+
+
+</script>
+</html>
