@@ -1,8 +1,8 @@
 <?php 
 require 'koneksi.php';
 $result = mysqli_query($conn, "SELECT * FROM supplier ORDER BY nama ASC");
-$rows = []; // digunakan untuk menyimpan nilai yang akan di isi dari lemari
-while($row = mysqli_fetch_assoc($result)) { //ambil looping data dari lemari simpan ke dalam row
+$rows = []; // digunakan untuk menyimpan nilai yang akan di isi dari kotak
+while($row = mysqli_fetch_assoc($result)) { //ambil looping data dari kotak simpan ke dalam row
 $rows[] = $row;
 
 }

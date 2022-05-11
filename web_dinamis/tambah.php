@@ -112,37 +112,5 @@ if(isset($_POST["submit"]) ) {
     </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<!-- <script type="text/javascript">
-    // document.getElementById('btn_submit').disabled = true;
-    $('#btn_submit').prop('disabled', true);
-
-    $nama = '';
-    $jenis_kelamin = '';
-    $telpon = '';
-    $alamat = '';
-    $('input[name=nama]').on('input', function(){
-        nama = $(this).val();
-        enableButton();
-    });
-    $('selected[name=jenis_kelamin]').on('selected', function(){
-        jenis_kelamin = $(this).val();
-        enableButton();
-    });
-    $('input[name=telpon]').on('input', function(){
-        telpon = $(this).val();
-        enableButton();
-    });
-    $('input[name=alamat]').on('input', function(){
-        alamat = $(this).val();
-        enableButton();
-    });
-    function enableButton() {
-        if(nama != '' && jenis_kelamin != '' && telpon != '' && alamat != '') {
-            $('#btn_submit').prop('disabled', false);
-        } else {
-            $('#btn_submit').prop('disabled', true);
-        }
-    }
-</script> -->
 </body>
 </html>
